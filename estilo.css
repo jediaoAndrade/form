@@ -318,11 +318,19 @@ a button i{
     border-top-right-radius:50px ;
     border-bottom-right-radius:50px ;
     }
-    .imagem{
-        display: none;
-    }
+   
     .formulario{
         border-radius: 25px;
+        
+    }
+    @media screen and (max-width:665px){
+     .imagem{
+        display: none;
+    }
+        .formulario{
+        border-radius: 25px;
+        
+    }
         
     }
    
