@@ -1,0 +1,363 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.back{
+    background-image: linear-gradient(45deg , crimson,rgb(24, 22, 22));
+    min-height: 100vh;
+    width: 100%;
+     padding: 2%;
+     background-size: cover;
+     background-position: center;
+}
+.conteudo{
+    display: flex;
+    min-height: 90vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px ;
+}
+.imagem{
+    flex: 50%;
+    background-color: rbga(0,0,0, 0.9);
+       border-top-left-radius:25px ;
+      border-bottom-left-radius:25px ;
+}
+.formulario{
+    flex: 50%;
+    background: rgb(255, 255, 255);
+    border-top-right-radius:25px ;
+    border-bottom-right-radius:25px ;
+    display: flex;
+    flex-direction: column;
+    padding: 6% 6%;
+    
+}
+.caixa{
+
+    padding: 10px 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px;
+}
+.headline h1{
+        word-spacing: 3px;
+}
+.headline , .button , .form{
+   padding: 15px 0;
+}
+.headline p a{
+    color:  rgb(182, 0, 9) ;
+    text-decoration: none;
+    font-weight: bold;
+  
+}
+.headline p{
+    opacity: 0.9;
+   
+    word-spacing: 3px;
+    
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button a{
+    text-decoration: none;
+}
+.button div{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 50px;
+    background: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+     text-align: center ;
+}
+.button i{
+margin-right:0.5rem ;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+input[type="text"]{
+   width: 100%;
+    height: 50px;
+     background: none;
+      outline: none;
+      border: none;
+      border-bottom: 3px solid rgb(14, 13, 13);
+      text-align: left;
+      padding: 0px 10px;
+      font-size: 17px;
+      letter-spacing: 1px;
+      opacity: 0.8;
+       border-radius: 2px;
+       outline: none;
+       background: none;
+}
+input[type="password"]{
+   width: 100%;
+    height: 50px;
+      border: none;
+      background: none;
+      outline: none;
+      text-align: left;
+       border-bottom: 3px solid rgb(14, 13, 13);
+      padding: 0px 10px;
+      font-size: 17px;
+      opacity: 0.8;
+      border-radius: 2px;
+}
+#traco{
+    content: "";
+    border-bottom: 1px solid rgb(212, 204, 204);
+    width: 100%;
+}
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+input[type="button"]{
+   width: 100%;
+    height: 50px;
+     border-radius: 6px;
+      background: none;
+      outline: none;
+      border: none;
+     background-color:crimson;
+      font-size: 17px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+}
+input[type="button"]:hover{
+    transition: all ease 0.40s ;
+  background-color: rgb(151, 18, 45);
+  letter-spacing: 2px;
+}
+.headline p{
+    letter-spacing:-0.5px;
+}
+#insta{
+     margin-right: 10px;
+     border: none;
+     background: rgb(238, 241, 236);
+      color: black;
+      outline: none;
+      
+    }
+#insta i{
+    font-size: 25px;   
+}
+#insta i span{
+    font-size: 13px;
+    margin-top: -20px;
+}
+#facebook i{
+    font-size: 25px;  
+}
+#facebook {
+    background: rgb(47, 47, 148);
+    color: white;
+    border: none;
+    outline: none;
+}
+label a{
+    text-decoration: none;
+     color: crimson
+}
+input[type="text"]:focus{
+    transition: all 0.7s ease ;
+       border-bottom: 3px solid  crimson; 
+     opacity: 0.8;
+     outline: none;
+}
+input[type="password"]:focus{
+  border-bottom: 3px solid  crimson;
+     opacity: 0.8;
+      transition: all 0.7s ease ;
+}
+
+.imagem div img{
+    height: 100%;
+    width: 100%;
+    margin-top: -50px;
+    animation: img 2s linear infinite alternate-reverse;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagem div{
+    padding: 0% 13%;
+
+}
+#texto{
+    color: rgb(236, 236, 236);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    animation: texto 2s ease infinite alternate;  
+}
+a button i{
+    margin: 0.5rem;
+    margin-top: 0.15rem;
+}
+@keyframes img{
+    from{
+        transform: translateY(30px);
+        opacity: 0.6;
+    }
+    to{
+        transform: translateY(15px);
+        opacity: 1;
+    }
+}
+@keyframes texto{
+    from{
+        opacity: 1;
+    }
+    to{
+      opacity: 0.3;
+    }
+}
+
+/* RESPO*/
+@media screen and (max-width:912px) {
+    .conteudo{
+        margin-top: 15%;
+          min-height: 80vh;
+           border-radius: 50px;
+    }
+    .formulario{
+    width: 5%;
+    border-top-right-radius:50px ;
+    border-bottom-right-radius:50px ;
+    }
+
+    .caixa{
+        display: flex;
+        align-items: center;
+        margin-top: 50%;
+    }
+    .imagem{
+        width: 15%;
+         border-top-left-radius:50px ;
+    border-bottom-left-radius:50px ;
+    }
+    .button div{
+    width: 145px;
+    height: 50px; 
+    }
+    .button div span{
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    .button div i{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .imagem div img{
+    margin-top: 140%;
+    width: 130%;
+}
+.imagem div{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#texto{
+    text-align: center;
+}
+    
+
+}
+@media screen and (max-width:712px) {
+    .button{
+        display: flex;
+        flex-direction: column;
+    }
+    .button a{
+        padding: 5px;
+        justify-content:start;
+    }
+    .headline h1{
+        font-size: 25px;
+    }
+    .headline{
+        text-align: center;
+    }
+    .caixa{
+        margin-top: 20%;
+    }
+    .conteudo{
+        margin-top: 3%;
+    }
+    #texto{
+        font-size: 13px;
+    }
+    .button div{
+        width: 100%;
+    }
+     .formulario{
+    border-top-right-radius:50px ;
+    border-bottom-right-radius:50px ;
+    }
+   
+}
+@media screen and (max-width:414px) {
+    #texto{
+        font-size:13px ;
+        margin-top:-25% ;
+    }
+    .form{
+        font-size: 13px;
+    }
+    .imagem{
+        display: none;
+    }
+    .formulario{
+        border-radius: 25px;
+        
+    }
+}
+@media  screen and (max-width:375px) {
+    .imagem{
+        display: none;
+    }
+      .formulario{
+    border-radius: 25px;
+   }
+   .button div{
+        width: 100%;
+    }
+    .formulario{
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width:280px) {
+    .imagem{
+        display: none;
+    }
+    .button div{
+        width: 100%;
+    }
+   .formulario{
+    border-radius: 25px;
+   }
+}

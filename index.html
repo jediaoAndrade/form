@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d59cb6dce0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="fontawe/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="back">
+        <div class="conteudo">
+            <div class="imagem">
+                <div>
+                    <img src="Security.png">
+                </div>
+                <div id="texto">
+                    Start for free and get attractive.
+                </div>
+            </div>
+            <div class="formulario">
+                <div class="caixa">
+                <div class="headline">
+                    <h1>Get's Starded. </h1>
+                    <p>Already move our count? <a href="#">Login</a></p>
+                </div>
+                
+                <div class="button">
+                    <a href="#"><div id="insta"><i class="fa-brands fa-google"></i><span>Sign up with Google</span></div></a>
+                    <a href="#"><div id="facebook"><i class="fa-brands fa-facebook"></i><span>Sign up with Instagram</span></div></a>
+                </div>
+                <div id="traco"><span ></span></div>
+                <div class="form">
+                    <form >
+                        <label for="email">User</label><br>
+                        <input type="text" placeholder="nuriel244" id="email">
+                        <span id="texto-email" style="color: red;">
+                          
+                        </span>
+                        <br><br>
+                        <label for="pass">Password</label><br>
+                        <input id="pass" type="password" placeholder="********"><br>
+                        <span id="texto-pass" style="color: red;" >
+
+                        </span>
+                        <br><br>
+                      <input type="checkbox" id="check" required>
+                        <label for="check">I agree, of politic <a href="#">Terms of device</a> nice aice</label>
+                        <br> <br>
+                         <span id="texto-fim" style="color: rgb(16, 139, 16);font-weight: bold;padding:0px 3px;display: flex;justify-content: center;" >
+
+                        </span>
+                        <input onclick="validar()" type="button" value="Registar" >
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validar(){
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        var fim = document.getElementById('texto-fim');
+        var textoemail = document.getElementById("texto-email");
+        var textopass = document.getElementById("texto-pass");
+
+        if(email==""){
+            textoemail.innerHTML=`O campo não pode estar vazio`;
+             textoemail.style.fontWeight="bold";
+            textopass.innerHTML="";
+            fim.innerHTML="";
+            
+        }
+        else if (pass==""){
+            textopass.innerHTML=`O campo não pode estar vazio`;
+            textopass.style.fontWeight="bold";
+            textoemail.innerHTML=`<i class="fa-solid fa-circle-check" style="color:green;padding:3px 2px;width:15px"></i>`;
+        }
+        else if (pass.length<6){
+            textopass.innerHTML="senha muito curta";
+            textopass.style.fontWeight="bold";
+            textoemail.innerHTML="";
+        }
+        else {
+        fim.innerHTML=`<i class="fa-solid fa-circle-check" style="color:green;padding:px 0px;width:15px"></i> <p style="padding:0px 3px">Validado</p>`
+        textoemail.innerHTML="";
+        textopass.innerHTML="";
+        }
+        }
+    </script>
+</body>
+</html>                                    
