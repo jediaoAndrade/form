@@ -317,6 +317,11 @@ a button i{
      .formulario{
     border-top-right-radius:50px ;
     border-bottom-right-radius:50px ;
+    border-radius: 25px;
+    }
+    }
+    .imagem{
+    display:none;
     }
    
 }
